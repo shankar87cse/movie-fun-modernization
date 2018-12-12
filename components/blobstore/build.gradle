@@ -1,9 +1,6 @@
 apply from: "../../java.gradle"
 
 dependencies {
-
-    compile project(":components:blobstore")
-    
     compile "org.springframework:spring-core:$springVersion"
     compile "org.springframework:spring-web:$springVersion"
     compile "org.springframework:spring-context:$springVersion"
@@ -18,5 +15,4 @@ dependencies {
     compile "com.amazonaws:aws-java-sdk:1.11.74"
 
     testCompile "junit:junit:$junitVersion"
-    
 }
