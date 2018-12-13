@@ -1,6 +1,7 @@
 package org.superbiz.moviefun;
 
 import org.junit.Test;
+import org.superbiz.cfsupport.ServiceCredentials;
 
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.*;
@@ -64,6 +65,7 @@ public class ServiceCredentialsTest {
                                   " }";
 
         ServiceCredentials serviceCredentials = new ServiceCredentials(vcapServices);
+
 
         String accessKeyId = serviceCredentials.getCredential("photo-storage", "user-provided", "access_key_id");
 
