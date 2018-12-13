@@ -21,6 +21,9 @@ public class MoviesClient {
         this.restOperations = restOperations;
     }
 
+    public MoviesClient() {
+    }
+
     public void addMovie(MovieInfo movie) {
         restOperations.postForEntity(moviesUrl, movie, MovieInfo.class);
     }
